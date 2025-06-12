@@ -121,6 +121,36 @@ header p {
     overflow-y: auto;
 }
 
+.output-area h1 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.output-area h2 {
+    color: #4a5568;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.output-area ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.output-area li {
+    margin-bottom: 8px;
+}
+
+.output-area strong {
+    color: #2d3748;
+    font-weight: 600;
+}
+
 .placeholder {
     color: #a0aec0;
     font-style: italic;
