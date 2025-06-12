@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI自己紹介ジェネレーター</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI自己紹介ジェネレーター</h1>
+            <p>名前を入力すると、AIが架空の自己紹介を生成します</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="input-section">
+                <h2>名前を入力</h2>
+                <div class="input-group">
+                    <input type="text" id="nameInput" placeholder="例: 田中太郎" maxlength="50">
+                    <button id="generateBtn">自己紹介を生成</button>
+                </div>
+                <div class="input-info">
+                    <small>※ 生成には数秒かかる場合があります</small>
+                </div>
+            </div>
+            
+            <div class="output-section">
+                <h2>生成された自己紹介</h2>
+                <div id="outputArea" class="output-area">
+                    <div class="placeholder">
+                        名前を入力して「自己紹介を生成」ボタンを押してください
+                    </div>
+                </div>
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <span>生成中...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
